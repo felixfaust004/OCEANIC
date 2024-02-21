@@ -1,0 +1,87 @@
+@font-face {
+    font-family: myFont;
+    src: url(SFPRODISPLAYBOLD.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.diver{
+    position: fixed;
+    top: 400px;
+    z-index: 1000;
+}
+
+.container-1 img,
+.container-2 img,
+.container-3 img,
+.container-4 img,
+.container-5 img,
+.container-6 img,
+.container-7 img {
+    position: relative;
+    border: none;
+    display: block; /* Remove any extra spacing due to inline display */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.container-1 h1 {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: myFont;
+    font-size: 80px;
+    color: white;
+}
+
+.two{
+    background: linear-gradient(to bottom, #15AAE2, #0C9DD4);
+    text-align: center;
+    font-family: myFont;
+    font-size: 80px;
+    color: white;
+}
+
+.three{
+    background: linear-gradient(to bottom, #0C9DD4, #0B8ABB);
+    text-align: center;
+    font-family: myFont;
+    font-size: 80px;
+    color: white; 
+}
+
+.four{
+    background: linear-gradient(to bottom, #0B8ABB, #076589);
+    text-align: center;
+    font-family: myFont;
+    font-size: 80px;
+    color: white; 
+}
+
+.five{
+    background: linear-gradient(to bottom, #076589, #043447);
+    text-align: center;
+    font-family: myFont;
+    font-size: 80px;
+    color: white; 
+}
+
+.six{
+    background: linear-gradient(to bottom, #043447, #000000);
+    text-align: center;
+    font-size: 80px;
+    color: black; 
+}
+
+

@@ -1,0 +1,428 @@
+@font-face {
+    font-family: myFont;
+    src: url(SFPRODISPLAYBOLD.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white; /* Color of the scrollbar thumb */
+    border-radius: 2px; /* Rounded corners of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.top-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: myFont;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.top-section.scrolled {
+    background-color: black;
+}
+
+.video1 video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.quote{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 170px;
+    font-family: myFont;
+    text-align: center;
+  }
+
+  .sub-quote1{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-family: myFont;
+    text-align: center;
+}
+
+.container1{
+    position: relative;
+    background-image: url(imgs/ocean-3.png);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+   
+.container1 .sub-quote{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 90px;
+    text-align: left;
+    font-family: myFont;
+    color: white;
+}
+
+.container2{
+    margin-top: 2px;
+    position: relative;
+    background-image: url(imgs/ocen-banner.png);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+   
+.container2 .sub-quote1{
+    position: relative;
+    top: 50%;
+    font-size: 50px;
+    text-align: center;
+    font-family: myFont;
+    color: white;
+}
+
+.container2 .sub-quote2{
+    position: relative;
+    top: 50%;
+    font-size: 80px;
+    text-align: center;
+    font-family: myFont;
+    color: white;
+}
+
+.container3{
+    margin-top: 2px;
+    position: relative;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container3 .sub-quote3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.container3 .sub-quote3{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-align: center;
+    font-family: myFont;
+    color: white;
+}
+
+.container1 button{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 40px;
+    color:white;
+    font-family: myFont;
+    font-size: 20px;
+    border-color: white;
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    cursor: pointer;
+}
+
+.box {
+    margin-top: 2px;
+    background-color: black;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.image-box1, .image-box2, .image-box3, .image-box4, .image-box5 {
+    display: none;
+    flex: 1;
+    position: relative; 
+}
+
+.image-box1 img, .image-box2 img, .image-box3 img, .image-box4 img, .image-box5 img {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 300px;
+}
+
+.description1 {
+    color: white;
+    font-family: myFont;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 120px;
+    text-align: center;
+}
+
+.sub-description1 {
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    text-align: center;
+}
+
+.description2 {
+    color: white;
+    font-family: myFont;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 160px;
+    text-align: center;
+}
+
+.sub-description2 {
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    right: 24px;
+    text-align: center;
+}
+
+.description3 {
+    color: white;
+    font-family: myFont;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 160px;
+    text-align: center;
+}
+
+.sub-description3 {
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    text-align: center;
+}
+
+.description4 {
+    color: white;
+    font-family: myFont;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 160px;
+    text-align: center;
+}
+
+.sub-description4 {
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    right: 80px;
+    text-align: center;
+}
+
+.description5 {
+    color: white;
+    font-family: myFont;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 260px;
+    text-align: center;
+}
+
+.sub-description5 {
+    color: white;
+    font-family: myFont;
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    right: 80px;
+    text-align: center;
+}
+
+.container4 {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #00183B;
+    margin-top: 2px;
+    height: 100vh;
+}
+
+.column {
+    align-items: center;
+    padding: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.column img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.column p {
+    font-size: 40px;
+    font-family: myFont;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(to top, black, #00183B); /* Gradient from black to #00183B */
+    color: white;
+    padding: 40px;
+    height: 35vh;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Updated to column */
+    justify-content: center; /* Center items vertically */
+    align-items: center;
+}
+
+.footer-logo{
+    width: 100px;
+    font-family: myFont;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a i {
+    color: #55acee; /* Change the color to your preferred color */
+    font-size: 20px;
+}
+
+.social-icons a:hover i {
+    color: white; /* Change the color for the hover effect if desired */
+}
+
+.footer-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: myFont;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: myFont;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+

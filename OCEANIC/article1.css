@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: fixed;
+    background-image: url(imgs/vecteezy_under-the-ocean-a-photo-with-garbage-caretta-caretta-and_22460890.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white; /* Color of the scrollbar thumb */
+    border-radius: 2px; /* Rounded corners of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.article-container {
+    position: relative; /* Change from fixed to relative */
+    background-color: rgba(0, 0, 0, 0.563);
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 800px; /* Adjust the width as needed */
+}
+
+.article-box {
+    text-align: left;
+    padding: 20px;
+}
+
+.article-box h1 {
+    color: #00bfff; /* Change the color as needed */
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center;
+    padding: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.column img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.column p {
+    font-size: 40px;
+    font-family: myFont;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
